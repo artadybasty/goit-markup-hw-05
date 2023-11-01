@@ -1,0 +1,307 @@
+:root {
+    --IRIS: #4D5AE5;
+    --NAVY-BLUE: #2E2F42;
+    --CLOUD: #F4F4FD;
+    --SLATE: #434455;
+    --CORNFLOWER: #E7E8FC;
+    --WHITE: #FFF;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: var(--SLATE);
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    max-width: 1158px;
+    margin: auto;
+}
+.list {
+    list-style: none;
+}
+
+.logo {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px; 
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+.logo span {
+    color: var(--IRIS);
+}
+.header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+    background: var(--WHITE, #FFF);
+    height: 72px;
+    padding: 0px 100px;
+    justify-content:space-between;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
+                0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
+.navigation { 
+    display: flex;
+} 
+.header-logo {
+    margin-right: 76px;
+}
+.nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    display: flex;
+    gap: 50px;
+    position: relative;
+}
+.header-address {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    gap: 40px;
+    display: flex;
+    position: relative;
+}
+.navigation ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: var(--IRIS);
+    position: absolute;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.header-address li a::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: var(--IRIS);
+    position: absolute;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navigation ul li:hover::after {
+    width: 100%;
+}
+.header-address li a:hover::after {
+    width: 100%;
+}
+.hero {
+    height: 600px;
+    background-image: url(https://logarithms17.github.io/goit-markup-hw-06/css/people-office.png);
+    background-repeat: no-repeat; 
+    text-align: center;
+    margin-bottom: 120px;
+}
+.background-image {
+    background-color: rgba(46, 47, 66, 0.7);
+    height: inherit;
+}
+h1 {
+    padding-top: 188px;
+}
+.hero-title {
+    color: var(--WHITE);
+    font-size: 56px;
+    font-weight: 900px;
+    line-height: 60px;
+    letter-spacing: 1.12px;
+    margin-bottom: 50px;
+}
+.hero-button {
+    background: transparent;
+    color: var(--WHITE);
+    border: 2px solid #4D5AE5;
+    box-shadow: 0px 4px 4px 0px rgba (0, 0, 0, 0..15);
+    margin-bottom: 188px;
+    padding: 16px 32px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.button:hover {
+    background: #4D5AE5;
+}
+.benefits ul {
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    padding: 0px 20px;
+    gap: 20px;
+}
+
+.benefits-icon {
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background: var(--CLOUD, #F4F4FD);
+    padding-bottom: 20px;
+    transition: .3s ease;
+}
+.benefits-icon:hover {
+    transform: scale(1.2);
+}
+
+.benefits-item h3 {
+    padding: 15px 0px;
+}
+.whatwedo-title {
+    text-align: center;
+    padding: 120px 0px 72px;
+    color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px; 
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+.whatwedo-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 120px;
+    justify-content: space-around;
+    padding: 0px 10px;
+}
+.ourteam {
+    background-color: var(--CLOUD);
+    height: 732px;
+}
+.ourteam-title {
+    text-align: center;
+    padding: 120px 0px 72px;
+    color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px; 
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+.ourteam-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 120px;
+    gap: 15px; 
+    justify-content: space-around;
+    padding: 0px 10px;
+
+}
+.ourteam-members {
+    border-radius: 0px 0px 4px 4px;
+    background: var(--WHITE, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+                0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
+                0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.ourteam-name {
+    gap: 8px;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+.ourteam-list p {
+    font-size: 15px;
+    padding: 8px 0px;
+}
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+    gap: 24px;
+    cursor: pointer;
+}
+.social-icons{
+    transition: 0.3s ease;
+}
+
+.social-icons:hover {
+    transform: scale(0.8);
+}
+.customer-section {
+    margin: 120px 0;
+}
+section h2 {
+    padding-bottom: 72px;
+    color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px; 
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+.customers-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    transition: .3s ease;
+}
+.customers-icon:hover{
+    transform: scale(1.2);
+}
+.footer {
+    background-color: var(--NAVY-BLUE);
+    height: 312px;
+    display: flex;
+    padding-left: 100px;
+    margin-bottom: 20px;
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.footer-webstudio {
+    color: var(--IRIS);
+    padding-bottom: 16px;
+}
+
+.footer span {
+    color: var(--CLOUD);
+}
+
+.footer p {
+    color: var(--CLOUD);
+}
+.modal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: rgba(61, 61, 87, 0.4);
+    width: 100%;
+    height: 370%;
+    display: flex;
+    justify-content: center;
+}
+.modal-content {
+    width: 408px;
+    height: 584px;
+    flex-shrink: 0;
+    background-color: white;
+    margin-top: 80px;
+    position: fixed;
+}
+.close-button {
+    position: absolute;
+    top: 24px;
+    left: 360px;
+    cursor: pointer;
+}  
+.is-hidden {
+    display: none;
+}

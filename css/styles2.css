@@ -1,0 +1,202 @@
+:root {
+    --IRIS: #4D5AE5;
+    --NAVY-BLUE: #2E2F42;
+    --CLOUD: #F4F4FD;
+    --SLATE: #434455;
+    --CORNFLOWER: #E7E8FC;
+    --WHITE: #FFF;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: var(--SLATE);
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    max-width: 1158px;
+    margin: auto;
+}
+.list {
+    list-style: none;
+}
+.logo {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px; 
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+.logo span {
+    color: var(--IRIS);
+}
+.header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+    background: var(--WHITE, #FFF);
+    height: 72px;
+    padding: 0px 100px;
+    justify-content:space-between;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
+                0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
+.navigation { 
+    display: flex;
+} 
+.header-logo {
+    margin-right: 76px;
+}
+.nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    display: flex;
+    gap: 50px;
+    position: relative;
+}
+.header-address {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    gap: 40px;
+    display: flex;
+    position: relative;
+}
+
+.navigation ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: var(--IRIS);
+    position: absolute;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.header-address li a::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: var(--IRIS);
+    position: absolute;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navigation ul li:hover::after {
+    width: 100%;
+}
+.header-address li a:hover::after {
+    width: 100%;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border-radius: 4px;
+    margin-top: 96px;
+    margin-bottom: 72px;
+}
+button {
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+    background: var(--CLOUD, #F4F4FD);
+    transition: 0.3s;
+    cursor: pointer;
+}
+button:hover {
+    border-radius: 4px;
+    border: none;
+    background: var(--IRIS);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 
+                0px 2px 1px 0px rgba(0, 0, 0, 0.08), 
+                0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+    gap: 25px;
+    position: relative
+}
+.row-list {
+    border-bottom: 2px solid var(--CORNFLOWER, #E7E9FC);
+    background: var(--WHITE, #FFF);
+    line-height: 32px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.portfolioimages {
+    width: 360px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #7e86b4;
+    transform: translatey(100%);
+    transition: transform 250ms ease-in-out;
+}
+.row-list:hover .overlay {
+    transform: translatey(0);
+}
+.overlay p {
+    color: #fff;
+    padding: 40px 32px;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+.footer {
+    background-color: var(--NAVY-BLUE);
+    height: 312px;
+    display: flex;
+    padding-left: 100px;
+    margin-bottom: 30px;
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.footer-webstudio {
+    color: var(--IRIS);
+}
+.footer span {
+    color: var(--CLOUD);
+}
+.footer p {
+    color: var(--CLOUD);
+}
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    cursor: pointer;
+}
+.social-icons {
+    transition: 0.3s ease;
+}
+.social-icons:hover {
+    transform: scale(0.8);
+}
+.pad {
+    padding-bottom: 16px;
+}
